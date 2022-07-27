@@ -1,19 +1,25 @@
-# Stake Wars: Episode III. Challenge 002 
-* Published on: 2022-07-13
-* Updated on: 2022-07-15			   
-* Submitted by: Open Shards Alliance
-* Rewards: 30 Unlocked NEAR Points (UNP)
+# NEAR Stake Wars Challenges 001 → 005 by MyDuong
+## Challenge 001 
 
-This challenge is focused on deploying a node (nearcore), downloading a snapshot, syncing it to the actual state of the network, then activating the node as a validator. 
+Create your Shardnet wallet & deploy the NEAR CLI. This is designed to be your very first challenge: use it to understand how staking on NEAR works.
 
+NEAR-CLI is a command-line interface that communicates with the NEAR blockchain via remote procedure calls (RPC):
 
-## Useful links
+* Setup and Installation NEAR CLI
 
-Wallet: https://wallet.shardnet.near.org/
+* View Validator Stats
 
-Explorer: https://explorer.shardnet.near.org/ 
+### Task 1 
+Create a wallet on ShardNet  : https://wallet.shardnet.near.org/ 
 
+Make sure to backup your seed phrase.
 
-### Setup your node
+### Task 2
+
+Setup NEAR-CLI
+Access to server via SSH and do the below commands:
+ If you use cloud providers to run your node please refer Challenge 005 first: 
+
 #### Server Requirements
 Please see the hardware requirement below:
+* Now 1 wallet has 500 NEAR at first, if seat price now higher than 500 NEAR, you should create more than 1 wallet and send NEAR to main wallet. Refer seat price here: [https://explorer.shardnet.near.org/nodes/validators](https://explorer.shardnet.near.org/nodes/validators)
