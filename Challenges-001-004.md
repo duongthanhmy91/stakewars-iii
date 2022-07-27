@@ -22,6 +22,7 @@ Access to server via SSH and do the below commands:
 ```
 sudo apt update && sudo apt upgrade -y
 ```
+![image](https://user-images.githubusercontent.com/6175292/181298222-08cfd6f9-9e67-4327-a03a-d850c423e4e9.png)
 
 *# Install Node.js and npm*
 ```
@@ -32,27 +33,52 @@ PATH="$PATH"
 #Check version
 ```
 node -v
-v18.6.0
-
-npm -v
-8.13.2
 ```
+![image](https://user-images.githubusercontent.com/6175292/181299316-59461d8c-bb40-4e3a-a3bc-478840c72746.png)
+
+```
+npm -v
+```
+
+![image](https://user-images.githubusercontent.com/6175292/181299248-3f2352a6-1993-455b-9d11-9504b1c3c152.png)
+
+
 *# Install NEAR-CLI, you can use sudo that help wihtout logged in as root* 
 ```
 sudo npm install -g near-cli
 ```
-*# Select the network shardnet ( this is the network we will use for Stake Wars )*
+![image](https://user-images.githubusercontent.com/6175292/181299576-c1063fb3-1eea-4fe4-bd9e-31993f2e5761.png)
+
+*# Select the shardnet network ( this is the network we will use for Stake Wars )*
 ```
 echo 'export NEAR_ENV=shardnet' >> ~/.bashrc && source ~/.bashrc
 ```
-#### Server Requirements
+### NEAR CLI Commands Guide:
 
-Please see the hardware requirement below:
+*# Proposals*
 
-First, we will start with installing Node.js and npm:
+A proposal by a validator indicates they would like to enter the validator set, in order for a proposal to be accepted it must meet the minimum seat price.
 
-curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -  
-sudo apt install build-essential nodejs
-PATH="$PATH"
-Check Node.js and npm version:
+Command: 
+```
+near proposals
+```
+![image](https://user-images.githubusercontent.com/6175292/181300569-d32bc881-755e-4112-be96-87b12a1048a6.png)
+
+*# Validators Current*
+
+This shows validators whose proposal was accepted one epoch ago, and that will enter the validator set in the next epoch.
+
+Command:
+
+```
+near validators next
+```
+
+
+
+
+
+
+
 
