@@ -12,6 +12,10 @@ This guide help to create a Virtual Machine on GCP (Google Cloud Platform). Assu
 
 ![image](https://user-images.githubusercontent.com/6175292/181279983-dc919c5e-4318-4757-ba8a-f67fa3e53aa0.png)
 
+Wait a minutes
+
+After your node created successfully, you can access to the node by click on SSH and choose Open in browser window.
+
 
 
 
