@@ -22,7 +22,7 @@ Access to server via SSH and do the below commands:
 
 *# Update linux machine*
 
-``` sudo apt update && sudo apt upgrade -y ```
+` sudo apt update && sudo apt upgrade -y `
 
 #Install Node.js and npm
 curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -  
