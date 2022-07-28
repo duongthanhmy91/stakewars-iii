@@ -30,7 +30,7 @@ curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo apt install build-essential nodejs -y
 PATH="$PATH"
 ```
-#Check version
+*#Check version*
 ```
 node -v
 ```
