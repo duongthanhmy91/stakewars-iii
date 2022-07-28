@@ -16,7 +16,7 @@ Go to https://wallet.shardnet.near.org/ .create wallet choose your name and save
 
 ## 2. Setup NEAR-CLI
 
-*If you use cloud providers to run your node please refer [Challenge 005](https://github.com/duongthanhmy91/stakewars-iii/edit/main/005.md) first*
+*If you use cloud providers to run your node please refer [Challenge 005](https://github.com/duongthanhmy91/stakewars-iii/blob/main/Challenges-005.md) first*
 
 Access to server via SSH and do the below commands: 
 
@@ -94,7 +94,7 @@ near validators next
 
 Full list of Near CLI commands: https://github.com/near/near-cli
 
-Now We will go to Challenge 002 [Setup and Run your Node](https://github.com/duongthanhmy91/stakewars-iii/blob/main/Challenges-002.md)
+Now We will go to Challenge 002 [Setup and Run your Node](https://github.com/duongthanhmy91/stakewars-iii/blob/main/Challenge-002.md)
 
 
 
