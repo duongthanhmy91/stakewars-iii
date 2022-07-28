@@ -84,9 +84,9 @@ Get the lastest commit at  [github.com/near/stakewars-iii/blob/main/commit](http
 ```
 cargo build -p neard --release --features shardnet
 ```
-This will take some time. Waiting ....
+This will take some time. Waiting to finish.
 
-![image](https://user-images.githubusercontent.com/6175292/181578711-e0f06c60-e889-497e-a064-a7ad14648020.png)
+![image](https://user-images.githubusercontent.com/6175292/181591151-711c7c1a-5e15-419d-b8a2-feaca1841aa6.png)
 
 **Initialize working directory**
 
@@ -94,10 +94,15 @@ Create the directory structure and generate config.json, node_key.json, and gene
 ```
 ./target/release/neard --home ~/.near init --chain-id shardnet --download-genesis
 ```
+![image](https://user-images.githubusercontent.com/6175292/181591559-c8632fd5-9080-493e-abd9-a5fdab02d70c.png)
+
+
 **Replace the config.json**
 ```
 rm ~/.near/config.json && wget -O ~/.near/config.json https://s3-us-west-1.amazonaws.com/build.nearprotocol.com/nearcore-deploy/shardnet/config.json
 ```
+![image](https://user-images.githubusercontent.com/6175292/181591692-028be7c9-7675-4fe0-aec1-d5a2f3fcaeeb.png)
+
 **Install AWS Cli**
 ```
 sudo apt-get install awscli -y
@@ -106,6 +111,9 @@ sudo apt-get install awscli -y
 ```
 rm ~/.near/genesis.json && wget -O ~/.near/genesis.json https://s3-us-west-1.amazonaws.com/build.nearprotocol.com/nearcore-deploy/shardnet/genesis.json
 ```
+![image](https://user-images.githubusercontent.com/6175292/181592001-2f1291e8-673c-4f88-a825-315845250d86.png)
+
+
 *If the above fails, AWS CLI may be oudated in your distribution repository. Instead, try:*
 ```
 pip3 install awscli --upgrade
@@ -115,6 +123,21 @@ pip3 install awscli --upgrade
 cd ~/nearcore
 ./target/release/neard --home ~/.near run
 ```
+
+![image](https://user-images.githubusercontent.com/6175292/181593737-6c193b7e-2a0b-4a91-9d00-b4c84b27c4f8.png)
+
+
+![image](https://user-images.githubusercontent.com/6175292/181593300-88ac3631-427b-4f09-89c7-38133bf343cd.png)
+
+
+We need to wait for Downloading headers 100% and Downloading blocks 100% Then Ctrl + C to exit this command.
+
+**Activating the node as validator**
+
+On next step, we need to setup node as validator. To setup a validator we need to sign transactions and this required access to our wallet keys. 
+
+
+
 
 
 
