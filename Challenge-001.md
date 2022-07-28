@@ -11,12 +11,14 @@ NEAR-CLI is a command-line interface that communicates with the NEAR blockchain 
 
 ## 1. Create a wallet on ShardNet 
 
-Go to https://wallet.shardnet.near.org/ . Created new account and Make sure to backup your seed phrase.
+Go to https://wallet.shardnet.near.org/ .create wallet choose your name and save seed phrase. This walled will be used to hold NEAR tokens.
+
 
 ## 2. Setup NEAR-CLI
 
+*If you use cloud providers to run your node please refer [Challenge 005](https://github.com/duongthanhmy91/stakewars-iii/edit/main/005.md) first*
+
 Access to server via SSH and do the below commands: 
-*If you use cloud providers to run your node please refer [Challenge 005](https://github.com/duongthanhmy91/stakewars-iii/edit/main/005.md) first:*
 
 *# Update linux machine*
 ```
@@ -43,17 +45,19 @@ npm -v
 ![image](https://user-images.githubusercontent.com/6175292/181299248-3f2352a6-1993-455b-9d11-9504b1c3c152.png)
 
 
-*# Install NEAR-CLI, you can use sudo that help wihtout logged in as root* 
+*# Install NEAR-CLI, you can use sudo that help without logged in as root* 
 ```
 sudo npm install -g near-cli
 ```
 ![image](https://user-images.githubusercontent.com/6175292/181299576-c1063fb3-1eea-4fe4-bd9e-31993f2e5761.png)
 
-*# Select the shardnet network ( this is the network we will use for Stake Wars )*
+*# Select the shardnet network ( this is the network we will use for Stake Wars ). This command will put it to .bashrc and these variables will loading automatically for every new terminal session.*
 ```
 echo 'export NEAR_ENV=shardnet' >> ~/.bashrc && source ~/.bashrc
 ```
 ## NEAR CLI Commands Guide:
+
+We ready to execute some commands, let’s see how works.
 
 *# Proposals*
 
