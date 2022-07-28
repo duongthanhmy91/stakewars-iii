@@ -90,7 +90,7 @@ near validators next
 
 Full list of Near CLI commands: https://github.com/near/near-cli
 
-We continue [Setup and Run your Node](
+Now We will go to Challenge 002 [Setup and Run your Node](https://github.com/duongthanhmy91/stakewars-iii/blob/main/Challenges-002.md)
 
 
 
