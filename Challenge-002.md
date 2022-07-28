@@ -96,14 +96,25 @@ Create the directory structure and generate config.json, node_key.json, and gene
 ```
 **Replace the config.json**
 ```
-rm ~/.near/config.json
-wget -O ~/.near/config.json https://s3-us-west-1.amazonaws.com/build.nearprotocol.com/nearcore-deploy/shardnet/config.json
+rm ~/.near/config.json && wget -O ~/.near/config.json https://s3-us-west-1.amazonaws.com/build.nearprotocol.com/nearcore-deploy/shardnet/config.json
 ```
 **Install AWS Cli**
 ```
 sudo apt-get install awscli -y
 ```
-
+**Replace current genesis block**
+```
+rm ~/.near/genesis.json && wget -O ~/.near/genesis.json https://s3-us-west-1.amazonaws.com/build.nearprotocol.com/nearcore-deploy/shardnet/genesis.json
+```
+*If the above fails, AWS CLI may be oudated in your distribution repository. Instead, try:*
+```
+pip3 install awscli --upgrade
+```
+**Run the node**
+```
+cd ~/nearcore
+./target/release/neard --home ~/.near run
+```
 
 
 
