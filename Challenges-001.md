@@ -1,5 +1,5 @@
-# NEAR Stake Wars Challenges 001 → 004 by MyDuong
-## Challenge 001 
+
+# Challenge 001 
 
 Create your Shardnet wallet & deploy the NEAR CLI. This is designed to be your very first challenge: use it to understand how staking on NEAR works.
 
@@ -9,11 +9,11 @@ NEAR-CLI is a command-line interface that communicates with the NEAR blockchain 
 
 * View Validator Stats
 
-### 1. Create a wallet on ShardNet 
+## 1. Create a wallet on ShardNet 
 
 Go to https://wallet.shardnet.near.org/ . Created new account and Make sure to backup your seed phrase.
 
-### 2. Setup NEAR-CLI
+## 2. Setup NEAR-CLI
 
 Access to server via SSH and do the below commands: 
 *If you use cloud providers to run your node please refer [Challenge 005](https://github.com/duongthanhmy91/stakewars-iii/edit/main/005.md) first:*
@@ -53,7 +53,7 @@ sudo npm install -g near-cli
 ```
 echo 'export NEAR_ENV=shardnet' >> ~/.bashrc && source ~/.bashrc
 ```
-### NEAR CLI Commands Guide:
+## NEAR CLI Commands Guide:
 
 *# Proposals*
 
@@ -65,7 +65,7 @@ near proposals
 ```
 ![image](https://user-images.githubusercontent.com/6175292/181531103-ea2d7b44-10ac-4dec-95dd-bac62aa3468a.png)
 
-*# Validators Current *
+*# Validators Current*
 
 This shows a list of active validators in the current epoch, the number of blocks produced, number of blocks expected, and online rate. Used to monitor if a validator is having issues.
 
@@ -88,7 +88,11 @@ near validators next
 ![image](https://user-images.githubusercontent.com/6175292/181538688-e2084204-adde-468a-beed-4362ff0a1ecc.png)
 
 
-*# Full list of Near CLI commands: https://github.com/near/near-cli*
+Full list of Near CLI commands: https://github.com/near/near-cli
+
+We continue [Setup and Run your Node](
+
+
 
 
 
