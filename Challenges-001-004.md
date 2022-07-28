@@ -63,17 +63,34 @@ Command:
 ```
 near proposals
 ```
-![image](https://user-images.githubusercontent.com/6175292/181300569-d32bc881-755e-4112-be96-87b12a1048a6.png)
+![image](https://user-images.githubusercontent.com/6175292/181531103-ea2d7b44-10ac-4dec-95dd-bac62aa3468a.png)
 
-*# Validators Current*
+*# Validators Current *
 
-This shows validators whose proposal was accepted one epoch ago, and that will enter the validator set in the next epoch.
+This shows a list of active validators in the current epoch, the number of blocks produced, number of blocks expected, and online rate. Used to monitor if a validator is having issues.
 
 Command:
 
 ```
+near validators current
+```
+![image](https://user-images.githubusercontent.com/6175292/181532949-af571eda-7d83-4796-8e60-93f6f107192b.png)
+
+
+*# Validators Next*
+
+This shows validators whose proposal was accepted one epoch ago, and that will enter the validator set in the next epoch.
+
+Command: 
+```
 near validators next
 ```
+![image](https://user-images.githubusercontent.com/6175292/181538688-e2084204-adde-468a-beed-4362ff0a1ecc.png)
+
+
+*# Full list of Near CLI commands: https://github.com/near/near-cli*
+
+
 
 
 
