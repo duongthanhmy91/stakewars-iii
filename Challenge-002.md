@@ -136,6 +136,87 @@ We need to wait for Downloading headers 100% and Downloading blocks 100% Then Ct
 
 On next step, we need to setup node as validator. To setup a validator we need to sign transactions and this required access to our wallet keys. 
 
+This command will show us a link to open a web browser where we will allow wallet keys to be copied locally.
+```
+near login
+```
+![image](https://user-images.githubusercontent.com/6175292/181785341-5a9fc3bd-3b30-4488-9cc1-22f528dc0441.png)
+
+A link will appear in terminal copy it and open in the web browser. Then grant full account access. Confirm it by typing you Account ID.
+
+**Grant Access to Near CLI**
+
+![image](https://user-images.githubusercontent.com/6175292/181787309-52473e2d-2558-4048-86fa-22b0a9f2a417.png)
+
+**After Grant, you will see a page like this, go back to console**
+
+![image](https://user-images.githubusercontent.com/6175292/181787389-4b978f5b-34af-416f-82da-cbf0ddea2f35.png)
+
+**Enter your wallet and press Enter**
+
+![image](https://user-images.githubusercontent.com/6175292/181788000-0056c9ae-ad9a-4f2a-bfec-2619ee631215.png)
+
+**Create the validator_key.json**
+
+My shardnet Wallet is *satoshi.shardnet.near*
+
+* <account_id> = satoshi.shardnet.near 
+* <pool_id> = satoshi.factory.shardnet.near
+
+Now we need to setup validator keys, the keys don’t exists by default so we need to create them. We will create them using our Account ID and then transform file to valid form.
+
+1. Use command *near generate-key <pool_id>* 
+```
+near generate-key satoshi.factory.shardnet.near
+```
+==> The public key with my account is *ed25519:DRo4ic8Wse9R4XuUEqAburSyS2r6Y1KuLwfw1ngLvMMA*
+
+2. Copy the file generated to shardnet folder
+
+cp ~/.near-credentials/shardnet/satoshi.shardnet.near.json ~/.near/validator_key.json
+
+![image](https://user-images.githubusercontent.com/6175292/181789382-84a4fc94-9df2-415a-a9f2-5837d13fc460.png)
+
+**Check and update the validator_key.json**
+```
+nano ~/.near/validator_key.json
+```
+* Edit “account_id” => xx.factory.shardnet.near, where xx is your PoolName.
+* Check and update the public key to math with key on step *generate-key*
+* Change private_key to secret_key
+```
+{
+        "account_id":"satoshi.factory.shardnet.near",
+        "public_key":"ed25519:DRo4ic8Wse9R4XuUEqAburSyS2r6Y1KuLwfw1ngLvMMA",
+        "secret_key":"ed25519:****"
+}
+```
+![image](https://user-images.githubusercontent.com/6175292/181797635-7628b9ec-c860-41b3-a50d-a0f21681d979.png)
+
+**Start the validator node**
+Run this command make sure 100% node sync
+```
+target/release/neard run
+```
+Enter Ctrl + C to exit.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
