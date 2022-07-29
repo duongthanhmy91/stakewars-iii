@@ -169,15 +169,15 @@ Now we need to setup validator keys, the keys don’t exists by default so we ne
 ```
 near generate-key satoshi.factory.shardnet.near
 ```
+![image](https://user-images.githubusercontent.com/6175292/181789382-84a4fc94-9df2-415a-a9f2-5837d13fc460.png)
+
 ==> The public key with my account is *ed25519:DRo4ic8Wse9R4XuUEqAburSyS2r6Y1KuLwfw1ngLvMMA*
 
 2. Copy the file generated to shardnet folder
 
 cp ~/.near-credentials/shardnet/satoshi.shardnet.near.json ~/.near/validator_key.json
 
-![image](https://user-images.githubusercontent.com/6175292/181789382-84a4fc94-9df2-415a-a9f2-5837d13fc460.png)
-
-**Check and update the validator_key.json**
+**Update the validator_key.json**
 ```
 nano ~/.near/validator_key.json
 ```
