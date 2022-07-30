@@ -198,10 +198,69 @@ Run this command make sure 100% node sync
 ```
 target/release/neard run
 ```
-Enter Ctrl + C to exit.
+**Setup Systemd Command**
 
+```
+sudo vi /etc/systemd/system/neard.service
 
+```
 
+Paste:
+```
+[Unit]
+Description=NEARd Daemon Service
+
+[Service]
+Type=simple
+User=<USER>
+#Group=near
+WorkingDirectory=/home/<USER>/.near
+ExecStart=/home/<USER>/nearcore/target/release/neard run
+Restart=on-failure
+RestartSec=30
+KillSignal=SIGINT
+TimeoutStopSec=45
+KillMode=mixed
+
+[Install]
+WantedBy=multi-user.target
+```
+
+*Note: Change USER to your paths*
+
+* Check your user name by command.
+```
+whoami
+```
+=>  <USER> = myduong
+  
+* Check you location by this command
+```
+pwd
+```
+=> *WorkingDirectory= /home/myduong/.near*
+
+  
+**Enable daemon and start service**
+```
+sudo systemctl enable neard.service
+sudo systemctl start neard
+  ```
+
+**For pretty log printing, see logs with colors**
+  ```
+sudo apt install ccze -y
+  ```
+
+**Monitor log**
+  ```
+journalctl -n 100 -f -u neard | ccze -A
+  
+  ```
+  ## Let's go to challenge 3 [Mount your Staking Pool.](https://github.com/duongthanhmy91/stakewars-iii/blob/main/Challenge-003.md)
+  
+  
+  
 
 
 
