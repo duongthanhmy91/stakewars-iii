@@ -10,6 +10,5 @@
 
 * [Troubleshooting](https://github.com/duongthanhmy91/stakewars-iii/blob/main/Troubleshooting.md)
 
-* [Stake Wars instructions from Near](https://github.com/near/stakewars-iii/tree/main/challenges)
 
 
