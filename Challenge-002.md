@@ -232,7 +232,7 @@ WantedBy=multi-user.target
 ```
 whoami
 ```
-=>  <USER> = myduong
+USER = myduong
   
 * Check you location by this command
 ```
