@@ -261,6 +261,8 @@ sudo apt install ccze -y
 journalctl -n 100 -f -u neard | ccze -A
   
   ```
+  ![image](https://user-images.githubusercontent.com/6175292/181872200-b33b7d85-5747-42bc-b952-e610ce905962.png)
+
   ## Let's go to challenge 3 [Mount your Staking Pool.](https://github.com/duongthanhmy91/stakewars-iii/blob/main/Challenge-003.md)
   
   
