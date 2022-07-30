@@ -2,34 +2,29 @@
 
 Deploy a staking pool contract.
 
-*<account_id>: satoshi.shardnet.near
+* **<account_id>: satoshi.shardnet.near**
 
-<pool_name>: satoshi
+* **<pool_name>: satoshi**
 
-<pool_id>: satoshi.factory.shardnet.near*
+* **<pool_id>: satoshi.factory.shardnet.near**
 
-#### Deploy a Staking Pool Contract
-##### Deploy a Staking Pool
+* **<public_key>: ed25519:7MmAhpHNbUh4AWnaG7hsmfoX2CLsS57xAYWSEMjyXjuB**
+
+**Deploy a Staking Pool**
+
 Calls the staking pool factory, creates a new staking pool with the specified name, and deploys it to the indicated accountId.
 
 ```
-near call factory.shardnet.near create_staking_pool '{"staking_pool_id": "<pool id>", "owner_id": "<accountId>", "stake_public_key": "<public key>", "reward_fee_fraction": {"numerator": 5, "denominator": 100}, "code_hash":"DD428g9eqLL8fWUxv8QSpVFzyHi1Qd16P8ephYCTmMSZ"}' --accountId="<accountId>" --amount=30 --gas=300000000000000
+near call factory.shardnet.near create_staking_pool '{"staking_pool_id": "<pool id>", "owner_id": "<accountId>", "stake_public_key": "<public_key>", "reward_fee_fraction": {"numerator": 5, "denominator": 100}, "code_hash":"DD428g9eqLL8fWUxv8QSpVFzyHi1Qd16P8ephYCTmMSZ"}' --accountId="<accountId>" --amount=30 --gas=300000000000000
+```
+Be sure to have at least 30 NEAR available, it is the minimum required for storage.
+
+**Staking to the pool**
+```
+near call <pool_id> deposit_and_stake --amount <NEAR amount> --accountId <account_id> --gas=300000000000000
 ```
 
-From the example above, you need to replace:
-
-* **Pool ID**: Staking pool name, the factory automatically adds its name to this parameter, creating {pool_id}.{staking_pool_factory}
-Examples:   
-
-- If pool id is stakewars will create : `stakewars.factory.shardnet.near`
-
-* **Owner ID**: The SHARDNET account (i.e. stakewares.shardnet.near) that will manage the staking pool.
-* **Public Key**: The public key in your **validator_key.json** file.
-* **5**: The fee the pool will charge (e.g. in this case 5 over 100 is 5% of fees).
-* **Account Id**: The SHARDNET account deploying and signing the mount tx.  Usually the same as the Owner ID.
-
-> Be sure to have at least 30 NEAR available, it is the minimum required for storage.
-Example : near call stake_wars_validator.factory.shardnet.near --amount 30 --accountId stakewars.shardnet.near --gas=300000000000000
+Example : 
 
 
 To change the pool parameters, such as changing the amount of commission charged to 1% in the example below, use this command:
