@@ -225,6 +225,7 @@ KillMode=mixed
 [Install]
 WantedBy=multi-user.target
 ```
+![image](https://user-images.githubusercontent.com/6175292/181870632-daa7f411-0581-4fee-b69b-c6d6a755a2b2.png)
 
 *Note: Change USER to your paths*
 
@@ -232,14 +233,17 @@ WantedBy=multi-user.target
 ```
 whoami
 ```
-USER = myduong
+=> *USER = duongthanhmy91*
   
 * Check you location by this command
 ```
 pwd
 ```
-=> *WorkingDirectory= /home/myduong/.near*
+=> *WorkingDirectory= /home/duongthanhmy91/.near*
 
+![image](https://user-images.githubusercontent.com/6175292/181870572-6db20715-fbab-4873-9194-1446f4ebd0cf.png)
+
+*Enter :wq to save and exit.*
   
 **Enable daemon and start service**
 ```
