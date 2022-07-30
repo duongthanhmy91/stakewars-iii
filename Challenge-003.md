@@ -78,18 +78,24 @@ Command:
 ```
 near view <staking_pool_id> get_account_total_balance '{"account_id": "<accountId>"}'
 ```
+![image](https://user-images.githubusercontent.com/6175292/181879848-e21749c6-b558-4bbc-bae4-5eafab888c66.png)
+
 2. Staked Balance
 
 Command:
 ```
 near view <staking_pool_id> get_account_staked_balance '{"account_id": "<accountId>"}'
 ```
-2. Unstaked Balance
+![image](https://user-images.githubusercontent.com/6175292/181879874-5e6effff-394a-440b-8397-42977e170dab.png)
+
+3. Unstaked Balance
 
 Command:
 ```
 near view <staking_pool_id> get_account_unstaked_balance '{"account_id": "<accountId>"}'
 ```
+![image](https://user-images.githubusercontent.com/6175292/181879907-aec48184-d47f-4e7f-b933-6f618367b161.png)
+
 4. Available for Withdrawal
 
 You can only withdraw funds from a contract if they are unlocked.
@@ -98,6 +104,8 @@ Command:
 ```
 near view <staking_pool_id> is_account_unstaked_balance_available '{"account_id": "<accountId>"}'
 ```
+![image](https://user-images.githubusercontent.com/6175292/181879927-abb01748-6c83-4db5-8bb9-7521b0a985db.png)
+
 **Pause / Resume Staking**
 1. Pause
 Command:
