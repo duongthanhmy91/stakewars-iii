@@ -8,7 +8,7 @@
 
 * [Setup a Validator Node for Shardnet on Google Cloud console](https://github.com/duongthanhmy91/stakewars-iii/blob/main/Challenges-005.md)
 
-* [Troubleshooting](https://github.com/duongthanhmy91/stakewars-iii/blob/main/Troubleshooting.md)
+* [Troubleshooting](https://github.com/near/stakewars-iii/blob/main/challenges/troubleshooting.md)
 
 
 
