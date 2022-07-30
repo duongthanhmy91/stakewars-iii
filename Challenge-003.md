@@ -131,5 +131,5 @@ near proposals | grep 'satoshi'
 
 ## Let's go to challenge 4 🚀
 
-[Check your Node]().
+[Check your Node](https://github.com/duongthanhmy91/stakewars-iii/blob/main/Challenge-004.md).
   
