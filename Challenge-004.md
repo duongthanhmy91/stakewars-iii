@@ -24,4 +24,5 @@ curl -s -d '{"jsonrpc": "2.0", "method": "validators", "id": "dontcare", "params
 ```
 Your node must be active to be visualized by this command.
 
-![image](https://user-images.githubusercontent.com/6175292/181880337-4a24370c-30b6-45f0-bd2d-2bb36b801b29.png)
+![image](https://user-images.githubusercontent.com/6175292/182010279-3fc199f4-87f4-4b84-a2cf-c963a9e4d224.png)
+
