@@ -8,7 +8,7 @@ Deploy a staking pool contract with wallet satoshi.shardnet.near :
 
 * <pool_id>: satoshi.factory.shardnet.near
 
-* <public_key>: ed25519:7MmAhpHNbUh4AWnaG7hsmfoX2CLsS57xAYWSEMjyXjuB
+* <public_key>: ed25519:DRo4ic8Wse9R4XuUEqAburSyS2r6Y1KuLwfw1ngLvMMA
 
 **Deploy a Staking Pool**
 
@@ -21,7 +21,7 @@ Be sure to have at least 30 NEAR available, it is the minimum required for stora
 
 Example 
 ```
-near call factory.shardnet.near create_staking_pool '{"staking_pool_id": "satoshi", "owner_id": "satoshi.shardnet.near", "stake_public_key": "ed25519:7MmAhpHNbUh4AWnaG7hsmfoX2CLsS57xAYWSEMjyXjuB", "reward_fee_fraction": {"numerator": 5, "denominator": 100}, "code_hash":"DD428g9eqLL8fWUxv8QSpVFzyHi1Qd16P8ephYCTmMSZ"}' --accountId="satoshi.shardnet.near" --amount=30 --gas=300000000000000
+near call factory.shardnet.near create_staking_pool '{"staking_pool_id": "satoshi", "owner_id": "satoshi.shardnet.near", "stake_public_key": "ed25519:DRo4ic8Wse9R4XuUEqAburSyS2r6Y1KuLwfw1ngLvMMA", "reward_fee_fraction": {"numerator": 5, "denominator": 100}, "code_hash":"DD428g9eqLL8fWUxv8QSpVFzyHi1Qd16P8ephYCTmMSZ"}' --accountId="satoshi.shardnet.near" --amount=30 --gas=300000000000000
 ```
 
 ![image](https://user-images.githubusercontent.com/6175292/181878400-cdfa5395-a1f2-4336-8e6a-542fc5a58254.png)
