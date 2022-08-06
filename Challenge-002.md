@@ -161,22 +161,22 @@ A link will appear in terminal copy it and open in the web browser. Then grant f
 
 My shardnet Wallet is *satoshi.shardnet.near*
 
-* <account_id> = satoshi.shardnet.near 
-* <pool_id> = satoshi.factory.shardnet.near
+* <account_id> = mduong.shardnet.near 
+* <pool_id> = mduong.factory.shardnet.near
 
 Now we need to setup validator keys, the keys don’t exists by default so we need to create them. We will create them using our Account ID and then transform file to valid form.
 
 1. Use command *near generate-key <pool_id>* 
 ```
-near generate-key satoshi.factory.shardnet.near
+near generate-key mduong.shardnet.near
 ```
-![image](https://user-images.githubusercontent.com/6175292/181789382-84a4fc94-9df2-415a-a9f2-5837d13fc460.png)
+![image](https://user-images.githubusercontent.com/6175292/183255995-19803ed4-304f-4f6c-bec6-aefc1dd9587b.png)
 
-==> The public key with my account is *ed25519:DRo4ic8Wse9R4XuUEqAburSyS2r6Y1KuLwfw1ngLvMMA*
+==> The public key with my account is *ed25519:Cjf3mKtwoNEcPaamUtt4KV9u9dY8ELwxzhGskKPeaj19*
 
 2. Copy the file generated to shardnet folder
 
-cp ~/.near-credentials/shardnet/satoshi.shardnet.near.json ~/.near/validator_key.json
+cp ~/.near-credentials/shardnet/mduong.shardnet.near.json ~/.near/validator_key.json
 
 **Update the validator_key.json**
 ```
@@ -187,12 +187,12 @@ nano ~/.near/validator_key.json
 * Change private_key to secret_key
 ```
 {
-        "account_id":"satoshi.factory.shardnet.near",
-        "public_key":"ed25519:DRo4ic8Wse9R4XuUEqAburSyS2r6Y1KuLwfw1ngLvMMA",
+        "account_id":"mduong.factory.shardnet.near",
+        "public_key":"ed25519:Cjf3mKtwoNEcPaamUtt4KV9u9dY8ELwxzhGskKPeaj19",
         "secret_key":"ed25519:****"
 }
 ```
-![image](https://user-images.githubusercontent.com/6175292/181797635-7628b9ec-c860-41b3-a50d-a0f21681d979.png)
+![image](https://user-images.githubusercontent.com/6175292/183256080-62689e3b-477f-477a-af2d-40d8a5e0ddbf.png)
 
 **Start the validator node**
 Run this command make sure 100% node sync
@@ -226,10 +226,10 @@ Description=NEARd Daemon Service
 
 [Service]
 Type=simple
-User=<USER>
+User=duongthanhmy91
 #Group=near
-WorkingDirectory=/home/<USER>/.near
-ExecStart=/home/<USER>/nearcore/target/release/neard run
+WorkingDirectory=/home/duongthanhmy91/.near
+ExecStart=/home/duongthanhmy91/nearcore/target/release/neard run
 Restart=on-failure
 RestartSec=30
 KillSignal=SIGINT
