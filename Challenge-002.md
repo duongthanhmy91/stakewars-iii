@@ -140,13 +140,13 @@ This command will show us a link to open a web browser where we will allow walle
 ```
 near login
 ```
-![image](https://user-images.githubusercontent.com/6175292/181785341-5a9fc3bd-3b30-4488-9cc1-22f528dc0441.png)
+![image](https://user-images.githubusercontent.com/6175292/183255554-4ece8f08-891e-474b-9cc4-dbc8ccc8c826.png)
 
 A link will appear in terminal copy it and open in the web browser. Then grant full account access. Confirm it by typing you Account ID.
 
 **Grant Access to Near CLI**
 
-![image](https://user-images.githubusercontent.com/6175292/181787309-52473e2d-2558-4048-86fa-22b0a9f2a417.png)
+![image](https://user-images.githubusercontent.com/6175292/183255447-e0f07941-e4c6-437d-aca1-11859184c895.png)
 
 **After Grant, you will see a page like this, go back to console**
 
@@ -154,7 +154,8 @@ A link will appear in terminal copy it and open in the web browser. Then grant f
 
 **Enter your wallet and press Enter**
 
-![image](https://user-images.githubusercontent.com/6175292/181788000-0056c9ae-ad9a-4f2a-bfec-2619ee631215.png)
+![image](https://user-images.githubusercontent.com/6175292/183255506-15cc677b-b763-42fd-b0d4-1f0c3e7d60f1.png)
+
 
 **Create the validator_key.json**
 
