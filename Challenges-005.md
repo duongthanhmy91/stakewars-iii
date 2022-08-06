@@ -4,9 +4,9 @@ This guide help to create a Virtual Machine on GCP (Google Cloud Platform). Assu
 
 **After login [console](https://console.cloud.google.com) take the following steps:**
 
-* ## Navigation Menu =>  Marketplace => Compute Engine => Create Instance
+* ## Navigation Menu => Compute Engine => Create Instance
 
-![image](https://user-images.githubusercontent.com/6175292/181281658-79772529-db1e-4d0b-a747-58a0a51fd52d.png)
+![image](https://user-images.githubusercontent.com/6175292/183250616-9420e73e-d7bd-4c6c-a8e9-e0502f27a664.png)
 
 * ## Select the Machine configuration per hardware requirement:
 
@@ -22,9 +22,9 @@ Follow Stake Wars instructions to mount a node validator at [Challenges-001-004]
 
 ## Pricing for running the validator :
 
-**Estimate about 165$/Month :**
+**Estimate about 175$/Month :**
 
-![image](https://user-images.githubusercontent.com/6175292/181291129-d5ad81c8-49d3-453d-bede-ee13506afe74.png)
+![image](https://user-images.githubusercontent.com/6175292/183250639-a44c4692-5e58-4cd9-ad8c-754f133d80c3.png)
 
 
 
