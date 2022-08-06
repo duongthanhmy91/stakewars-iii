@@ -24,14 +24,12 @@ Example
 near call factory.shardnet.near create_staking_pool '{"staking_pool_id": "mduong", "owner_id": "mduong.shardnet.near", "stake_public_key": "ed25519:Cjf3mKtwoNEcPaamUtt4KV9u9dY8ELwxzhGskKPeaj19", "reward_fee_fraction": {"numerator": 5, "denominator": 100}, "code_hash":"DD428g9eqLL8fWUxv8QSpVFzyHi1Qd16P8ephYCTmMSZ"}' --accountId="mduong.shardnet.near" --amount=30 --gas=300000000000000
 ```
 
-![image](https://user-images.githubusercontent.com/6175292/181878400-cdfa5395-a1f2-4336-8e6a-542fc5a58254.png)
-
 Let’s change reward commission to 1%
 
 ```
 near call mduong.factory.shardnet.near update_reward_fee_fraction '{"reward_fee_fraction": {"numerator": 1, "denominator": 100}}' --accountId mduong.shardnet.near --gas=300000000000000
 ```
-![image](https://user-images.githubusercontent.com/6175292/181878981-278630e1-8d84-49b6-8ed0-54b0192c2a63.png)
+![image](https://user-images.githubusercontent.com/6175292/183257704-ce124a35-3166-402c-a386-c5a36b4fcfc2.png)
 
 **Transactions Guide**
 
@@ -44,7 +42,8 @@ Command
 ```
 near call mduong.factory.shardnet.near deposit_and_stake --amount 1000 --accountId mduong.shardnet.near --gas=300000000000000
 ```
-   
+ ![image](https://user-images.githubusercontent.com/6175292/183257742-cf1b6f14-2bf8-4abd-8592-7a2c137a6aeb.png)
+  
  2. Unstake NEAR
    
 Amount in yoctoNEAR.
@@ -76,25 +75,24 @@ near call mduong.factory.shardnet.near withdraw_all --accountId mduong.shardnet.
 
 Command:
 ```
-near view <staking_pool_id> get_account_total_balance '{"account_id": "<accountId>"}'
+near view mduong.factory.shardnet.near get_account_total_balance '{"account_id": "mduong.shardnet.near"}'
 ```
-![image](https://user-images.githubusercontent.com/6175292/181879848-e21749c6-b558-4bbc-bae4-5eafab888c66.png)
+![image](https://user-images.githubusercontent.com/6175292/183257800-f990027a-0315-4c89-8588-f9a22562e099.png)
+
 
 2. Staked Balance
 
 Command:
 ```
-near view <staking_pool_id> get_account_staked_balance '{"account_id": "<accountId>"}'
+near view  mduong.factory.shardnet.near get_account_staked_balance '{"account_id": "mduong.shardnet.near"}'
 ```
-![image](https://user-images.githubusercontent.com/6175292/181879874-5e6effff-394a-440b-8397-42977e170dab.png)
 
 3. Unstaked Balance
 
 Command:
 ```
-near view <staking_pool_id> get_account_unstaked_balance '{"account_id": "<accountId>"}'
+near view mduong.factory.shardnet.near get_account_unstaked_balance '{"account_id": "mduong.shardnet.near"}'
 ```
-![image](https://user-images.githubusercontent.com/6175292/181879907-aec48184-d47f-4e7f-b933-6f618367b161.png)
 
 4. Available for Withdrawal
 
@@ -102,9 +100,8 @@ You can only withdraw funds from a contract if they are unlocked.
 
 Command:
 ```
-near view <staking_pool_id> is_account_unstaked_balance_available '{"account_id": "<accountId>"}'
+near view mduong.factory.shardnet.near is_account_unstaked_balance_available '{"account_id": "mduong.shardnet.near"}'
 ```
-![image](https://user-images.githubusercontent.com/6175292/181879927-abb01748-6c83-4db5-8bb9-7521b0a985db.png)
 
 **Pause / Resume Staking**
 1. Pause
@@ -127,7 +124,8 @@ Upon completion, you can check your node should be in proposals stage on Near Sh
 ```
 near proposals | grep 'mduong'
 ```
-![image](https://user-images.githubusercontent.com/6175292/181879740-0278f001-83db-4bb5-9d7b-e936b8229c9a.png)
+![image](https://user-images.githubusercontent.com/6175292/183257876-c5b1b94c-ca32-4fa9-bfc4-2c000fe3ee95.png)
+
 
 ## Let's go to challenge 4 🚀
 
