@@ -18,7 +18,7 @@ This guide help to create a Virtual Machine on GCP (Google Cloud Platform). Assu
 
 Should familiar with some basic Linux command. Refer here: [https://www.hostinger.com/tutorials/linux-commands](https://www.hostinger.com/tutorials/linux-commands) 
 
-Follow Stake Wars instructions to mount a node validator at [Challenges-001-004](https://github.com/duongthanhmy91/stakewars-iii/edit/main/Challenges-001-004.md)
+Follow Stake Wars instructions to mount a node validator at [Challenges-001-004](https://github.com/duongthanhmy91/stakewars-iii)
 
 ## Pricing for running the validator :
 
