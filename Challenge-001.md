@@ -13,6 +13,7 @@ NEAR-CLI is a command-line interface that communicates with the NEAR blockchain 
 
 Go to https://wallet.shardnet.near.org/ create wallet, choose your name and save seed phrase. This walled will be used to hold NEAR tokens.
 
+![image](https://user-images.githubusercontent.com/6175292/183252157-4e6572d6-0117-4244-884b-17520a9e7d93.png)
 
 ## 2. Setup NEAR-CLI
 
