@@ -1,6 +1,6 @@
 # Stake Wars: Episode III. Challenge 003
 
-Deploy a staking pool contract with wallet satoshi.shardnet.near :
+Deploy a staking pool contract with wallet mduong.shardnet.near :
 
 * <account_id>: mduong.shardnet.near
 
@@ -8,7 +8,7 @@ Deploy a staking pool contract with wallet satoshi.shardnet.near :
 
 * <pool_id>: mduong.factory.shardnet.near
 
-* <public_key>: ed25519:DRo4ic8Wse9R4XuUEqAburSyS2r6Y1KuLwfw1ngLvMMA
+* <public_key>: ed25519:Cjf3mKtwoNEcPaamUtt4KV9u9dY8ELwxzhGskKPeaj19
 
 **Deploy a Staking Pool**
 
@@ -21,7 +21,7 @@ Be sure to have at least 30 NEAR available, it is the minimum required for stora
 
 Example 
 ```
-near call factory.shardnet.near create_staking_pool '{"staking_pool_id": "satoshi", "owner_id": "satoshi.shardnet.near", "stake_public_key": "ed25519:DRo4ic8Wse9R4XuUEqAburSyS2r6Y1KuLwfw1ngLvMMA", "reward_fee_fraction": {"numerator": 5, "denominator": 100}, "code_hash":"DD428g9eqLL8fWUxv8QSpVFzyHi1Qd16P8ephYCTmMSZ"}' --accountId="satoshi.shardnet.near" --amount=30 --gas=300000000000000
+near call factory.shardnet.near create_staking_pool '{"staking_pool_id": "mduong", "owner_id": "mduong.shardnet.near", "stake_public_key": "ed25519:Cjf3mKtwoNEcPaamUtt4KV9u9dY8ELwxzhGskKPeaj19", "reward_fee_fraction": {"numerator": 5, "denominator": 100}, "code_hash":"DD428g9eqLL8fWUxv8QSpVFzyHi1Qd16P8ephYCTmMSZ"}' --accountId="mduong.shardnet.near" --amount=30 --gas=300000000000000
 ```
 
 ![image](https://user-images.githubusercontent.com/6175292/181878400-cdfa5395-a1f2-4336-8e6a-542fc5a58254.png)
@@ -29,7 +29,7 @@ near call factory.shardnet.near create_staking_pool '{"staking_pool_id": "satosh
 Let’s change reward commission to 1%
 
 ```
-near call satoshi.factory.shardnet.near update_reward_fee_fraction '{"reward_fee_fraction": {"numerator": 1, "denominator": 100}}' --accountId satoshi.shardnet.near --gas=300000000000000
+near call mduong.factory.shardnet.near update_reward_fee_fraction '{"reward_fee_fraction": {"numerator": 1, "denominator": 100}}' --accountId mduong.shardnet.near --gas=300000000000000
 ```
 ![image](https://user-images.githubusercontent.com/6175292/181878981-278630e1-8d84-49b6-8ed0-54b0192c2a63.png)
 
@@ -42,7 +42,7 @@ In order to become validator we need NEAR on in our pool balance about [seat pri
 
 Command
 ```
-near call satoshi.factory.shardnet.near deposit_and_stake --amount 1000 --accountId satoshi.shardnet.near --gas=300000000000000
+near call mduong.factory.shardnet.near deposit_and_stake --amount 1000 --accountId mduong.shardnet.near --gas=300000000000000
 ```
    
  2. Unstake NEAR
@@ -51,11 +51,11 @@ Amount in yoctoNEAR.
  
   Run the following command to unstake:
  ```
- near call satoshi.factory.shardnet.near unstake '{"amount": "<amount yoctoNEAR>"}' --accountId satoshi.shardnet.near --gas=300000000000000
+ near call mduong.factory.shardnet.near unstake '{"amount": "<amount yoctoNEAR>"}' --accountId mduong.shardnet.near --gas=300000000000000
   ```
 To unstake all you can run this one:
   ```
- near call satoshi.factory.shardnet.near unstake_all --accountId satoshi.shardnet.near --gas=300000000000000
+ near call mduong.factory.shardnet.near unstake_all --accountId mduong.shardnet.near --gas=300000000000000
 ```
 3. Withdraw
   
@@ -63,12 +63,12 @@ To unstake all you can run this one:
  
  Command:
  ```
- near call satoshi.factory.shardnet.near withdraw '{"amount": "<amount yoctoNEAR>"}' --accountId satoshi.shardnet.near --gas=300000000000000
+ near call mduong.factory.shardnet.near withdraw '{"amount": "<amount yoctoNEAR>"}' --accountId mduong.shardnet.near --gas=300000000000000
   ```
  Command to withdraw all:
   
  ```
-near call satoshi.factory.shardnet.near withdraw_all --accountId satoshi.shardnet.near --gas=300000000000000
+near call mduong.factory.shardnet.near withdraw_all --accountId mduong.shardnet.near --gas=300000000000000
 ```
 **Balances** 
 
@@ -121,11 +121,11 @@ near call <staking_pool_id> resume_staking '{}' --accountId <accountId>
 
 In order to have a validator seat, you must submit a proposal with a ping. A ping issues a new proposal and updates the staking balances for your delegators. A ping should be issued each epoch to keep reported rewards current
 ```
-near call satoshi.factory.shardnet.near ping '{}' --accountId satoshi.shardnet.near --gas=300000000000000
+near call mduong.factory.shardnet.near ping '{}' --accountId mduong.shardnet.near --gas=300000000000000
 ```
 Upon completion, you can check your node should be in proposals stage on Near ShardNet by this command:
 ```
-near proposals | grep 'satoshi'
+near proposals | grep 'mduong'
 ```
 ![image](https://user-images.githubusercontent.com/6175292/181879740-0278f001-83db-4bb5-9d7b-e936b8229c9a.png)
 
