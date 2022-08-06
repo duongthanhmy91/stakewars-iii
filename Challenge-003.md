@@ -2,11 +2,11 @@
 
 Deploy a staking pool contract with wallet satoshi.shardnet.near :
 
-* <account_id>: satoshi.shardnet.near
+* <account_id>: mduong.shardnet.near
 
-* <pool_name>: satoshi
+* <pool_name>: mduong
 
-* <pool_id>: satoshi.factory.shardnet.near
+* <pool_id>: mduong.factory.shardnet.near
 
 * <public_key>: ed25519:DRo4ic8Wse9R4XuUEqAburSyS2r6Y1KuLwfw1ngLvMMA
 
