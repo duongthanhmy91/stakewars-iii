@@ -72,7 +72,7 @@ git fetch
 ```
 **Update the commit**
 ```
-git checkout 0d7f272afabc00f4a076b1c89a70ffc62466efe9
+git checkout 68bfa84ed1455f891032434d37ccad696e91e4f5
 ```
 Get the lastest commit at  [github.com/near/stakewars-iii/blob/main/commit](https://github.com/near/stakewars-iii/blob/main/commit.md)
 
